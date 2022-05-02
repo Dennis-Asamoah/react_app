@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Navy()
+{
+  return <h1>I am navy </h1>
+}
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +21,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Navy />
         </a>
       </header>
     </div>
