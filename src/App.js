@@ -5,6 +5,11 @@ import './App.css';
 function Test()
 {
   return <h1>React is bae</h1>
+}  
+
+function Appo(props)
+{
+  return <p>iT IS WELL </p>
 }
 
 function App() {
@@ -24,6 +29,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Appo />
         </a>
         <Test />
       </header>
