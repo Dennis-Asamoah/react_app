@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Appo(props)
+{
+  return <p>iT IS WELL </p>
+}
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +21,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Appo />
         </a>
       </header>
     </div>
