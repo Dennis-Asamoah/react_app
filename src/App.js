@@ -12,6 +12,11 @@ function Appo(props)
   return <p>iT IS WELL of course </p>
 }
 
+function Appa()
+{
+  return coool 
+}
+
 function App() {
   return (
     <div className="App">
