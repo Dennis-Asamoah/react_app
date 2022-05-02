@@ -9,7 +9,7 @@ function Test()
 
 function Appo(props)
 {
-  return <p>iT IS WELL </p>
+  return <p>iT IS WELL of course </p>
 }
 
 function App() {
