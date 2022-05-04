@@ -1,35 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import Component1 from './components/Component1'
-
-
-function Test()
-{
-  return <h1>React is bae</h1>
-}  
-
+import {useEffect,useState} from 'react';
 
 function App() {
+
+const [count, setCount] = useState(0)
+  
+ useEffect = (
+ () => {setCount(count+1)}
+ )
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Test />
         <p>
-          Edit <code>src/App.js</code> and save to reload
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        
+          Learn React <br/>
+          {count}
         </a>
-        <Test />
-        <Component1 name='Dennis' />
       </header>
     </div>
   );
