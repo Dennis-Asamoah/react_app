@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Component1 from './components/Component1'
+import Component1 from './components/Component1';
+import Component2 from "./components/Component2";
+import {Link,Outlet} from "react-router-dom";
 
 
 function Test()
@@ -15,6 +17,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Test />
+        <nav>
+            <ul>
+              <li><Link to='component1'>component1</Link></li>
+              <li><Link to='component2'>component2</Link></li>
+            </ul>
+        </nav>
+        
         <p>
           Edit <code>src/App.js</code> and save to reload
         </p>
@@ -26,10 +35,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        
+          
         </a>
+        <Outlet/>
         <Test />
-        <Component1 name='Dennis' />
+          {/* <Component1 name='Dennis' /> */}
       </header>
     </div>
   );
